@@ -106,3 +106,101 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+
+#activeBlockers {
+    margin-top: 24px;
+}
+
+#activeBlockers h2 {
+    margin-bottom: 16px;
+}
+
+.blockerItem {
+    padding: 12px 0;
+    border-bottom: 1px solid #E1E5ED;
+}
+
+.blockerHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.blockerIcon,
+.dependencyIcon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.blockerIcon {
+    background-color: #FCE8E6;
+    color: #B54738;
+}
+
+.blockerInfo,
+.dependencyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.blockerInfo {
+    flex: 1;
+}
+
+.blockerTitle,
+.dependencyTitle {
+    font-weight: 600;
+}
+
+.blockerDescription,
+.dependencyLabel {
+    font-size: 13px;
+    color: #687386;
+}
+
+.blockerStatus {
+    background-color: #FCE8E6;
+    color: #B54738;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.dependencyChain {
+    margin: 16px 0 0 16px;
+    padding-left: 16px;
+    border-left: 2px solid #E1E5ED;
+}
+
+.dependencyNode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dependencyIcon {
+    background-color: #E8E5FC;
+    color: var(--color-primary);
+}
+
+.dependencyNode.impacted .dependencyIcon {
+    background-color: #FCE8E6;
+    color: #B54738;
+}
+
+.dependencyConnector {
+    margin: 6px 0 6px 10px;
+    color: #8B91A3;
+}
+

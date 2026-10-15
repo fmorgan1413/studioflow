@@ -60,15 +60,48 @@
             </div>
         </section>
 
+       
         <section id="activeBlockers">
             <h2>Active Blockers</h2>
 
-            <ul class="blockersList">
-                <li class="blocker">Blocker 1</li>
-                <li class="blocker">Blocker 2</li>
-                <li class="blocker">Blocker 3</li>
-            </ul>
+            <details class="blockerItem">
+                <summary class="blockerHeader">
+                    <div class="blockerIcon">!</div>
+
+                    <div class="blockerInfo">
+                        <span class="blockerTitle">Finalize character assets</span>
+                        <span class="blockerDescription">
+                            Blocked by: Concept approval
+                        </span>
+                    </div>
+
+                    <span class="blockerStatus">Blocked</span>
+                </summary>
+
+                <div class="dependencyChain">
+                    <div class="dependencyNode">
+                        <div class="dependencyIcon">✓</div>
+
+                        <div class="dependencyInfo">
+                            <span class="dependencyTitle">Concept approval</span>
+                            <span class="dependencyLabel">Upstream dependency</span>
+                        </div>
+                    </div>
+
+                    <div class="dependencyConnector">↓</div>
+
+                    <div class="dependencyNode impacted">
+                        <div class="dependencyIcon">!</div>
+
+                        <div class="dependencyInfo">
+                            <span class="dependencyTitle">Finalize character assets</span>
+                            <span class="dependencyLabel">Downstream task at risk</span>
+                        </div>
+                    </div>
+                </div>
+            </details>
         </section>
+
 
         <section id="healthReport">
             <h2>Project Health Report</h2>
