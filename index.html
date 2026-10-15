@@ -38,10 +38,26 @@
         <section id="healthOverview">
             <h2>Health Overview</h2>
 
-            <p id="totalTasks">Total Tasks: 10</p>
-            <p id="completedTasks">Completed: 1</p>
-            <p id="inProgressTasks">In Progress: 1</p>
-            <p id="blockedTasks">Blocked: 2</p>
+            
+            <div class="metric">
+                <span class="metricLabel">Total Tasks</span>
+                <span class="metricValue" id="totalTasks">10</span>
+            </div>
+
+            <div class="metric">
+                <span class="metricLabel">Completed Tasks</span>
+                <span class="metricValue" id="completedTasks">1</span>
+            </div>
+
+            <div class="metric">
+                <span class="metricLabel">In Progress Tasks</span>
+                <span class="metricValue" id="inProgressTasks">1</span>
+            </div>
+
+            <div class="metric">
+                <span class="metricLabel">Blocked Tasks</span>
+                <span class="metricValue" id="blockedTasks">2</span>
+            </div>
         </section>
 
         <section id="activeBlockers">
